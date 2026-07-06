@@ -7,12 +7,12 @@ importScripts('https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js'
 importScripts('https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging-compat.js');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCn89LRlH1lksZ811--jb2jlB2iZS5NH1s",
-  authDomain: "pontoweb-dc8dd.firebaseapp.com",
-  projectId: "pontoweb-dc8dd",
-  storageBucket: "pontoweb-dc8dd.firebasestorage.app",
-  messagingSenderId: "465750633035",
-  appId: "1:465750633035:web:282efd14b807e2a3823bce"
+  apiKey: "AIzaSyCu4xZukurVuasaxXa_FPaDE5_QkYppMEU",
+  authDomain: "gee-pet-ace.firebaseapp.com",
+  projectId: "gee-pet-ace",
+  storageBucket: "gee-pet-ace.firebasestorage.app",
+  messagingSenderId: "219235891976",
+  appId: "1:219235891976:web:3237b3bd58d9a8c5e9cabd"
 };
 
 try {
