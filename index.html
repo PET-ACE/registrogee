@@ -40,20 +40,23 @@
 
     <div id="root" class="max-w-md mx-auto min-h-screen p-4 flex flex-col justify-center"></div>
 
+    <!-- CONFIGURAÇÕES MODULARES DO NOVO PROJETO DO FIREBASE -->
     <script>
       // Endereço público do seu Google Apps Script Web App (Reimplantar como WEB APP, acesso ANYONE, e atualizar aqui)
       const API_URL = "https://script.google.com/macros/s/AKfycbweWz-_7h558UGvxVAvb_lP7vfL83ctga8ke_KE8djO4yRan1ySsHbcaufA56i5WNL5XQ/exec";
       
-      // Chave Pública VAPID do Cloud Messaging do seu Firebase
-      const VAPID_KEY = 'BBoKkzbg5v-PjBLtxOv7oQz-o9SEcnpdYu2cAawC_2WHozRfOyYnESz_lss2yA4BGnuO76II-NbwoKUqfaEN-S0';
+      // Chave Pública VAPID do Cloud Messaging do seu NOVO Firebase
+      const VAPID_KEY = 'BE47yAc_-bsUH382LWRxT4_6MYtFTbMPhEQynyu8Nttg1naWFMUVzUTpXf_X3tW97znV203-jL8NH8yJafgeLN0';
 
+      // Configuração completa do seu aplicativo Web Firebase sincronizado (gee-pet-ace)
       const firebaseConfig = {
-        apiKey: "AIzaSyCn89LRlH1lksZ811--jb2jlB2iZS5NH1s",
-        authDomain: "pontoweb-dc8dd.firebaseapp.com",
-        projectId: "pontoweb-dc8dd",
-        storageBucket: "pontoweb-dc8dd.firebasestorage.app",
-        messagingSenderId: "465750633035",
-        appId: "1:465750633035:web:282efd14b807e2a3823bce"
+        apiKey: "AIzaSyCu4xZukurVuasaxXa_FPaDE5_QkYppMEU",
+        authDomain: "gee-pet-ace.firebaseapp.com",
+        projectId: "gee-pet-ace",
+        storageBucket: "gee-pet-ace.firebasestorage.app",
+        messagingSenderId: "219235891976",
+        appId: "1:219235891976:web:3237b3bd58d9a8c5e9cabd",
+        measurementId: "G-7YDTXRW2E5"
       };
 
       let messaging = null;
@@ -274,7 +277,7 @@
            if (Notification.permission !== 'granted') return showAlert("Atenção", "Ative as notificações antes de testar.", "info");
            navigator.serviceWorker.ready.then(reg => {
               reg.showNotification("Teste Local 🔔", {
-                 body: "O som e o sistema de notificações estão activos no seu telefone!",
+                 body: "O som e o sistema de notificações estão ativos no seu telefone!",
                  icon: "https://github.com/luizhenrinq1-svg/testepontoweb/blob/main/Icone.png?raw=true",
                  vibrate: [500, 200, 500],
                  tag: 'test-notification'
